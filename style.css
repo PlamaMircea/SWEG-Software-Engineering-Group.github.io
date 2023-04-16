@@ -9,14 +9,6 @@ body, html {
   background-color: #1A1A1A;
 }
 
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1F1F1F;
-    color: #EEE;
-  }
-}
-
 /* Link */
 a {
   color: #1A1A1A;
@@ -63,7 +55,7 @@ section {
   max-width: 40em;
   margin: auto;
   padding: 1em 3em;
-  background-color: #F9F9F9;
+  background-color: #1A1A1A;
   border: 1px solid #DADADA;
   border-radius: 1em;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -72,8 +64,7 @@ section {
 section h1 {
   text-align: center;
   border-radius: 1em;
-  color: white;
-  background-color: #F9F9F9;
+  color: #1A1A1A;
   padding: 0.5em 1em;
 }
 
