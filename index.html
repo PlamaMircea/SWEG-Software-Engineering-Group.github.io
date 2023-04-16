@@ -8,6 +8,7 @@
   <title>SWEG - Software Engineering Group</title>
 
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -15,11 +16,19 @@
     <img id="header-logo" src="/img/sweg_logo.png" alt="Logo del gruppo SWEG">
     <div id="nav-navigation">
       <p><a href="#prodotto">Prodotto</a></p>
-      <p><a href="#documenti">Documenti</a></p>
+      <div class="dropdown">
+        <button class="dropbtn">Documenti</button>
+        <div class="dropdown-content">
+          <a href="#">Candidatura</a>
+          <a href="#">RTB</a>
+          <a href="#">PB</a>
+        </div>
+      </div> 
       <p><a href="#contatti">Contatti</a></p>
       <p><a href="#chisiamo">Chi Siamo</a></p>
     </div>
   </nav>
+  
 
   <section id="prodotto">
     <h1>PRODOTTO</h1>

@@ -3,9 +3,10 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.5em;
   font-weight: bold;
+  background-color: #1A1A1A;
 }
 
 /* Dark mode */
@@ -66,7 +67,7 @@ section {
   max-width: 40em;
   margin: auto;
   padding: 1em 3em;
-  background-color: #F9F9F9;
+  background-color: #1A1A1A;
   border: 1px solid #DADADA;
   border-radius: 1em;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
