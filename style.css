@@ -24,6 +24,7 @@ nav {
   align-items: center;
   padding: 1rem;
   background-color: #333;
+  color: #EEE;
 }
 
 nav a {
@@ -111,15 +112,24 @@ section h1 {
 }
 
 /* Accordion */
+
+.accordion{
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
 .accordion-header {
-  background-color: #cccccc17;
-  color: #000000;
   font-weight: bold;
   cursor: pointer;
 }
 
 .accordion-content {
-  display: none;
+  overflow: hidden;
 }
 
 .active .accordion-content {
