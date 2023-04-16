@@ -1,4 +1,4 @@
-/* Impostazioni globali */
+/* Global settings */
 body, html {
   margin: 0;
   padding: 0;
@@ -7,16 +7,17 @@ body, html {
   line-height: 1.5em;
   font-weight: bold;
   background-color: #1A1A1A;
+  color: #EEE; /* set text color to white */
 }
 
-/* Link */
+/* Links */
 a {
-  color: #1A1A1A;
+  color: #EEE;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* Barra di navigazione */
+/* Navigation bar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -41,7 +42,7 @@ nav a:hover {
   transition-duration: 1s;
 }
 
-/* Navigazione */
+/* Navigation */
 #nav-navigation {
   display: flex;
 }
@@ -50,7 +51,7 @@ nav a:hover {
   padding: 0 1em;
 }
 
-/* Sezioni */
+/* Sections */
 section {
   max-width: 40em;
   margin: auto;
@@ -64,7 +65,7 @@ section {
 section h1 {
   text-align: center;
   border-radius: 1em;
-  color: #1A1A1A;
+  color: #EEE; /* set heading text color to white */
   padding: 0.5em 1em;
 }
 
