@@ -1,10 +1,22 @@
-body, html {
+  body, html {
     margin: 0;
     padding: 0;
     font-family: monospace;
     font-size: 1.2em;
     font-weight: bold;
   }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1F1F1F;
+        color: #EEE;
+    }
+    #header-logo {
+        filter: invert(1);
+    }
+    /* Aggiungi altre modifiche per il dark mode qui */
+}
+
   
   a {
     color: black;
@@ -12,14 +24,23 @@ body, html {
   }
   
   nav {
-    max-width: 40em;
-    margin: auto;
-    padding: 2em 3em 0 3em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+    background-color: #333;
   }
-  
+
+  nav a {
+      color: #EEE;
+      text-decoration: none;
+      padding: 0.5rem;
+  }
+
+  nav a:hover {
+      color: #AAA;
+  }
+
   #header-logo {
     width: 5em;
     transition-duration: 1s;
