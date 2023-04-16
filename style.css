@@ -1,106 +1,124 @@
-  body, html {
-    margin: 0;
-    padding: 0;
-    font-family: monospace;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #1F1F1F;
-        color: #EEE;
-    }
-    #header-logo {
-        filter: invert(1);
-    }
-    /* Aggiungi altre modifiche per il dark mode qui */
+/* Impostazioni globali */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: bold;
 }
 
-  
-  a {
-    color: black;
-    text-decoration: underline;
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1F1F1F;
+    color: #EEE;
   }
-  
+  #header-logo {
+    filter: invert(1);
+  }
+  /* Aggiungi altre modifiche per il dark mode qui */
+}
+
+/* Link */
+a {
+  color: #1A1A1A;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Barra di navigazione */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+}
+
+nav a {
+  color: #EEE;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  color: #AAA;
+}
+
+/* Logo */
+#header-logo {
+  width: 5em;
+  transition-duration: 1s;
+}
+
+/* Navigazione */
+#nav-navigation {
+  display: flex;
+}
+
+#nav-navigation p {
+  padding: 0 1em;
+}
+
+/* Sezioni */
+section {
+  max-width: 40em;
+  margin: auto;
+  padding: 1em 3em;
+  background-color: #F9F9F9;
+  border: 1px solid #DADADA;
+  border-radius: 1em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+section h1 {
+  text-align: center;
+  border-radius: 1em;
+  color: white;
+  background-color: #1A1A1A;
+  padding: 0.5em 1em;
+}
+
+.indented {
+  padding-left: 2em;
+}
+
+.red_unipd {
+  color: #B5121B;
+}
+
+#last-update {
+  text-align: center;
+  font-size: 0.7em;
+  color: gray;
+}
+
+#link-github {
+  word-break: break-word;
+}
+
+.tag-versione {
+  font-size: 0.8em;
+  color: gray;
+}
+
+@media (max-width: 600px) {
   nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #333;
+    flex-direction: column;
+    padding: 0.5rem;
   }
 
   nav a {
-      color: #EEE;
-      text-decoration: none;
-      padding: 0.5rem;
+    margin: 0.5rem 0;
   }
 
-  nav a:hover {
-      color: #AAA;
-  }
-
-  #header-logo {
-    width: 5em;
-    transition-duration: 1s;
-  }
-  
-  #nav-navigation {
-    display: flex;
-  }
-  
-  #nav-navigation p {
-    padding: 0 1em;
-  }
-  
   section {
-    max-width: 40em;
-    margin: auto;
-    padding: 1em 3em;
+    padding: 0.5em;
   }
-  
-  section h1 {
-    text-align: center;
-    border-radius: 1em;
-    color: white;
-    background-color: black;
+
+  #nav-navigation {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .indented {
-    padding-left: 2em;
-  }
-  
-  .red_unipd {
-    color: #B5121B;
-  }
-  
-  #last-update {
-    text-align: center;
-    font-size: 0.7em;
-    color: gray;
-  }
-  
-  #link-github {
-    word-break: break-word;
-  }
-  
-  .tag-versione {
-    font-size: 0.8em;
-    color: gray;
-  }
-  
-  @media (max-width: 600px) {
-    nav {
-      flex-direction: column;
-    }
-  
-    section {
-      padding: 0.5em;
-    }
-  
-    #nav-navigation {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
+}
