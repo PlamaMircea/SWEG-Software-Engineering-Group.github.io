@@ -17,6 +17,10 @@ a {
   font-weight: bold;
 }
 
+a:hover{
+  color: #AAA;
+}
+
 /* Navigation bar */
 nav {
   display: flex;
@@ -72,10 +76,6 @@ section h1 {
   padding-left: 2em;
 }
 
-.red_unipd {
-  color: #B5121B;
-}
-
 #last-update {
   text-align: center;
   font-size: 0.7em;
@@ -115,11 +115,11 @@ section h1 {
 
 .accordion{
   cursor: pointer;
-  padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
+  margin-bottom: 1em;
   transition: 0.4s;
 }
 
