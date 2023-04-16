@@ -15,10 +15,6 @@ body, html {
     background-color: #1F1F1F;
     color: #EEE;
   }
-  #header-logo {
-    filter: invert(1);
-  }
-  /* Aggiungi altre modifiche per il dark mode qui */
 }
 
 /* Link */
@@ -99,7 +95,7 @@ section h1 {
   word-break: break-word;
 }
 
-.tag-versione {
+.version-tag {
   font-size: 0.8em;
   color: gray;
 }
@@ -122,27 +118,6 @@ section h1 {
     flex-direction: column;
     align-items: center;
   }
-}
-
-/* Dropdown */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  display: none;
-}
-
-.dropdown-link:hover .dropdown-content {
-  display: block;
 }
 
 /* Accordion */
