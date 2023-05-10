@@ -11,11 +11,12 @@ body, html {
 }
 
 /* Links */
-a {
-  color: #EEE;
-  text-decoration: none;
+a,
+:link {
+  color: #2196f3;
   font-weight: bold;
 }
+
 
 a:hover{
   color: #AAA;
@@ -24,7 +25,7 @@ a:hover{
 /* Navigation bar */
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem;
   background-color: #333;
@@ -64,6 +65,7 @@ section {
   border: 1px solid #DADADA;
   border-radius: 1em;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
 section h1 {
